@@ -13,13 +13,11 @@ llm = ChatOpenAI(
     openai_api_key=OPENAI_API_KEY,
     model="gpt-3.5-turbo",  # 챗 모델 사용
     temperature=0.7,
-    max_tokens=150,
+    max_tokens=300,
 )
 
 # 챗 프롬프트 템플릿 정의
-prompt = ChatPromptTemplate.from_template(
-    template="You are a helpful assistant. Answer the following question: {question}"
-)
+prompt = ChatPromptTemplate.from_template(template="문제를 읽어줘: {question}")
 
 # RunnableSequence 사용
 qa_chain = prompt | llm  # 프롬프트와 LLM을 파이프처럼 연결
