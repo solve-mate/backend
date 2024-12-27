@@ -40,11 +40,13 @@ numpy==1.26.4
 openai==1.58.1
 orjson==3.10.12
 packaging==24.2
+pillow==11.0.0
 propcache==0.2.1
 pydantic==2.10.4
 pydantic-settings==2.7.0
 pydantic_core==2.27.2
 Pygments==2.18.0
+pytesseract==0.3.13
 python-dotenv==1.0.1
 python-multipart==0.0.20
 PyYAML==6.0.2
