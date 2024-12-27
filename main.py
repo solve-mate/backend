@@ -18,3 +18,5 @@ def read_item(item_id: int, q: Union[str, None] = None):
 @app.get("/question")
 def ask_question():
     return {"question": "What is the meaning of life, the universe, and everything?"}
+
+
